@@ -1,0 +1,35 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Title -->
+        <title>Color Scheme</title>   
+    </head>
+    <body>
+        <div class="color-picker">
+            <form id="form">
+                <input type="color" id="color"></input>
+                <select id="scheme" >
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="complement">complement</option>
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>
+                </select>
+                <button id="get-color-btn">Get Color Scheme</button>
+            </form>
+        </div>
+        <div id="color-container"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
